@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href=".style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Menu lateral-->
+    <section id="menuLateral">
+        <a href="#" class="menuLateral__brand"> <i class="bx bxs-smile menuLateral__icon">TECNODATA</i> </a>
+       <ul class="menuLateral__side-menu">
+        <li class="menuLateral__divisor" data-text="OPERACIONES"></li>
+        <li><a href="#" class="active"><i class="bx bx-dots-horizontal-rounded menuLateral__icon"></i>Facturas</a></li>
+        <li><a href="#"><i class="bx bxs-widget menuLateral__icon"></i>Comprar</a></li>
+        <li><a href="#"><i class="bx bxs-inbox menuLateral__icon"></i>INVENTARIOS</a></li>
+        <!--Sub menu de navegacion que depende de inventarios-->
+            <ul class="menuLateral__side-dropdown">
+                <li><a href="#">Materia prima</a></li>
+                <li><a href="#">Producto fabricado</a></li>
+            
+
+            </ul>
+
+              <li class="menuLateral__divisor" data-text="CATALOGOS"></li>
+            <!--Sub menu de navegacion que depende de inventarios-->
+            <li><a href="#"><i class="bx bx-table menuLateral__icon"></i>TABLAS CATALOGOS</a></li>
+            <ul class="menuLateral__side-dropdown">
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Proveedores</a></li>
+                <li><a href="#">Fabricas</a></li>
+                <li><a href="#">Sucursales</a></li>
+            </ul>
+
+            <li><a href="#"><i class="bx bxs-chart menuLateral__icon"></i>Reportes</a></li>
+    
+       </ul>
+      
+
+    </section>
+      <!--Aqui termina el menu lateral-->
+
+ <!-- Aqui comienza la seciion delmenu de navegacion y el conenido principal-->
+    <section id="content">
+        <!--Aqui comienza el menu de navegacion-->
+        <nav>
+            <!--Este es el inut de busqueda-->
+            <form class="nav__form" action="#">
+                <div class="nav__form-group">
+                    <input type="text" id="SearchInput" class="nav__form-group--input" placeholder="Buscar">
+                    <i class="bx bx-search nav__form-group--icon"></i>
+                </div>
+            </form>
+            <!--Iconos de notificaciones-->
+            <a class="nav__link" href="#"><i class="bx bxs-bell nav__link-icon"></i><span class="nav__link-bagde">5</span></a>
+            <a class="nav__link" href="#"><i class="bx bxs-message-square-dots nav__link-icon"></i><span class="nav__link-badge">8</span></a>
+            <!--Foto de perfil-->
+            <span class="nav__divider"></span>
+            <div class="nav__profile">
+                <img src="" alt="" class="nav__profile-img">
+                <ul class="nav__profile-link">
+                <li><a href="#"><i class="bx bxs-user-circle nav__link-icon"></i>Perfil</a></li>
+                <li><a href="#"><i class="bx bxs-cog nav__link-icon"></i>Configuraciones</a></li>
+                <li><a href="#"><i class="bx bxs-log-out-circle nav__link-icon"></i>Cerrar Sesiòn</a></li>
+            </ul>
+            </div>
+
+        </nav>
+        <!--Aqui termina el menu de navegacion-->
+        <!--Aqui comienza el contenido principal-->
+        <main>
+
+        </main>
+        <!--Aqui termina el contenido principal-->
+    </section>
+
+</body>
+</html>
