@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
-    <link rel="stylesheet" href=".style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -72,7 +72,36 @@
         <!--Aqui termina el menu de navegacion-->
         <!--Aqui comienza el contenido principal-->
         <main>
+            <h1 class="main__title">Panel de Control</h1>
+            <ul class="main__migas">
+                <li><a href="#">Inicio</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="active">Bienvenido</a></li>
+            </ul>
 
+            <div class="main__data">
+                <div class="data__content-data">
+                     <h3>Demostarcion de consumo de API</h3>
+                     <p>Esta tabla Consume: para obtener los datos que se van a indexar dentro de la tabla</p>
+
+                     <div class="main__divTable">
+                        <div class="main__div-header"></div>
+                        <button onclick="openModal()" class="main__nuevo-registro">Registrar</button>
+                     </div>
+
+                     <table class="main__divTable-table"></table>
+                     <thead class="main__divTable-table--thead">
+                        <tr>Id</tr>
+                        <tr>Nombre del producto</tr>
+                        <tr>Precio</tr>
+                        <tr>Categoria</tr>
+                        <tr>ACCIONES</tr>
+                     </thead>
+                     <tbody>
+
+                     </tbody>
+                </div>
+            </div>
         </main>
         <!--Aqui termina el contenido principal-->
     </section>
